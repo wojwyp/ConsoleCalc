@@ -13,7 +13,6 @@ namespace Calculator
             try
             {
                 Console.WriteLine("Podaj pierwszą liczbę:");
-
                 var number1 = GetInput();
 
                 Console.WriteLine("Podaj drugą liczbę:");
@@ -31,6 +30,10 @@ namespace Calculator
             {
                 //logowanie do pliku
                 Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                Console.ReadLine();
             }
         }
 
